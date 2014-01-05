@@ -144,8 +144,18 @@ define(['event_bus'], function(eventBus) {
     })
 
     eventBus.on('render object', function (object, context) {
-        if(params.object !== undefined || context !== undefined){
-            object.render(context);
+        if(object !== undefined || context !== undefined){
+            if(object.render !== undefined){
+                object.render(context);
+            }
+        }
+    })
+
+    eventBus.on('animate object', function (object) {
+        if(object !== undefined){
+            if(object.animate !== undefined){
+                object.animate();
+            }
         }
     })
 });
