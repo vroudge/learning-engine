@@ -60,6 +60,7 @@ define(['event_bus'], function(eventBus) {
                     context.drawImage(this.defaultSprite.img, this.defaultSprite.x, this.defaultSprite.y, this.defaultSprite.width,this.defaultSprite.height, this.x-(this.width/2), this.y-(this.height/2),this.width,this.height);
                 }
             }
+            
         }
         object.animate = function ()
         {
