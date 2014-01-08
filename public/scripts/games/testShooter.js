@@ -45,6 +45,7 @@ define([
             { 
                 eventBus.emit('DrawThis', tabX[i], tabY[i]);
             }
+                eventBus.emit('DrawThat', canvas);
 
             });
 
