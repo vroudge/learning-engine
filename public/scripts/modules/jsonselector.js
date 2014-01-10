@@ -9,7 +9,6 @@ define(['event_bus'], function (eventBus) { //OBLIGATOIRE
         var levelKeys = [];
         var levelObject = [];
         var levelCounter=0;
-
           for(i in jayson) { 
 
             var fieldCount = 0;
